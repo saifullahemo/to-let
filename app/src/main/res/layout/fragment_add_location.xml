@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:background="#f3f3f3"
+    android:nestedScrollingEnabled="false"
+    android:outlineProvider="none"
+    android:scrollIndicators="none"
+    android:touchscreenBlocksFocus="false"
+    android:paddingBottom="20dp"
+    android:id="@+id/room_detail_scrollview"
+    tools:context=".AddPhotosFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:verticalScrollbarPosition="defaultPosition"
+        android:padding="@dimen/card_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Location, Preferences &amp; Amenities"
+            android:id="@+id/textView15"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/browser_actions_text_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Enter Location"
+            android:id="@+id/textView3"
+            android:textColor="@color/browser_actions_text_color"
+            android:layout_gravity="center|left" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="10dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="City / Town"
+                    android:id="@+id/add_roo_city_town_label"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textShortMessage|textCapWords|textAutoComplete|textAutoCorrect"
+                    android:ems="10"
+                    android:id="@+id/add_room_town_edit_text"
+                    android:hint="E.g. Dhaka"
+                    android:textColor="@color/colorAccent"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:layout_marginRight="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/address"
+                    android:id="@+id/textView13"
+                    android:layout_weight="2.5"
+                    android:layout_margin="10dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textShortMessage|textCapWords"
+                    android:ems="10"
+                    android:id="@+id/add_room_suburb_edit_text"
+                    android:hint="E.g. Dhanmondi"
+                    android:textColor="@color/colorAccent"
+                    android:layout_weight="0.5"
+                    android:background="@null"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:layout_marginRight="5dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Amenities"
+            android:textColor="@color/browser_actions_text_color"
+            android:id="@+id/textView16"
+            android:layout_gravity="center|left" />
+
+
+        <include layout="@layout/amenities_selection_layout" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginTop="10dp"
+            android:text="Preferences"
+            android:textColor="@color/browser_actions_text_color"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/room_smallFamily_layoutid"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/add_room_fam_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:src="@mipmap/ic_fam" />
+
+                    <TextView
+                        android:id="@+id/add_room_fam_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/add_room_fam_imageview"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center|center_horizontal|center_vertical"
+                        android:text="@string/add_room_family_amenity"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/room_female_layoutid"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/add_room_female_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:src="@mipmap/ic_female" />
+
+                    <TextView
+                        android:id="@+id/add_room_female_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center|center_horizontal|center_vertical"
+                        android:text="@string/add_room_female_preference"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/room_male_layoutid"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/add_room_male_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:src="@mipmap/ic_male" />
+
+                    <TextView
+                        android:id="@+id/add_room_male_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/add_room_male_preference"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/room_sober_layoutid"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/add_room_sober_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:src="@mipmap/ic_sober" />
+
+                    <TextView
+                        android:id="@+id/add_room_sober_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/add_room_sober_imageview"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/add_room_habits_amenity"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/room_professional_layoutid"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/add_room_pro_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:src="@mipmap/ic_pro" />
+
+                    <TextView
+                        android:id="@+id/add_room_pro_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/add_room_pro_imageview"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center|center_horizontal|center_vertical"
+                        android:text="@string/add_room_professional_amenity"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/room_couple_layoutid"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/add_room_couple_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:src="@mipmap/ic_couple" />
+
+                    <TextView
+                        android:id="@+id/add_room_couple_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/add_room_couple_amenity"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_room_step3_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@mipmap/ic_done_white_48dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">To-Let</string>
+    <string name="action_sign_out">Sign out</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_login">Log in</string>
+
+    <string name="parse_server_url">https://parseapi.back4app.com/</string>
+    <!-- Change the following strings as required -->
+    <string name="parse_app_id">CoaLWeWhY0EApRwmiHRzjGPtOE4gqUJFRa2kS3s3</string>
+    <string name="parse_client_key">fCXZ2W4WqcxE7Upr6Tab0TxVFdj7P9Vy0uK9GyW4</string>
+    <string name="parse_rest_api_key">wVkYa66CCzCPftgzReWGOGZd0YRWlpQGXCdQpOhl</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <!--Strings related to register-->
+
+    <string name="title_activity_sign_up">Sign up</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="prompt_username">Username</string>
+    <string name="string_sign_up_nav">Don\'t have an account? Sign up</string>
+    <string name="action_add_listing">Add Room</string>
+    <string name="title_activity_add_listing">Add Listing</string>
+    <string name="listing_locale">LOCATION</string>
+    <string name="title_activity_add_room">Add Room</string>
+    <string name="title_activity_forgot_password">Reset Password</string>
+    <string name="reset_password_email_hint">Email</string>
+    <string name="action_reset_password">Reset Password</string>
+    <string name="reset_password_text">To reset your password, please enter the email you registered with below.
+        A link will be sent to your email for you to reset your password.</string>
+
+    <!-- placeholder-->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_room_detail">Room Detail</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_room_wardrobe_amenity">Fitted \nWardrobe</string>
+    <string name="add_room_zesa_amenity">Electricity</string>
+    <string name="add_room_entrance_amenity">Own \nEntrance</string>
+    <string name="add_room_toilet_amenity">Own \nToilet</string>
+    <string name="add_room_water_amenity"> Water</string>
+    <string name="add_room_bic_amenity">GAS\n</string>
+    <string name="add_room_kitchen_amenity">\n Kitchen</string>
+    <string name="add_room_parking_amenity">Parking\n</string>
+    <string name="add_room_wifi_amenity">Wifi</string>
+    <string name="add_room_secure_amenity">Secure\n</string>
+    <string name="add_room_couple_amenity">Couple\n</string>
+    <string name="add_room_borehole_amenity">Borehole\n</string>
+    <string name="add_room_family_amenity">Small \nFamily</string>
+    <string name="add_room_habits_amenity">Sober \nHabits</string>
+    <string name="add_room_professional_amenity">Professional\n</string>
+    <string name="add_room_furnished_amenity">Furnished\n</string>
+    <string name="add_room_female_preference">Female\n</string>
+    <string name="add_room_male_preference">Male\n</string>
+    <string name="title_activity_test_nav_drawer">TestNavDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_contact_us">Contact Us</string>
+    <string name="contact_us_call_num">+263774222734</string>
+    <string name="contact_us_custexp_num">+263771366252</string>
+    <string name="contact_us_wapp_num">+263774666249</string>
+    <string name="contact_us_website_link">http://www.rooms.co.zw</string>
+    <string name="title_activity_my_rooms">My Rooms</string>
+
+    <string name="search_hint">Search</string>
+
+    <!--facebook-->
+    <string name="facebook_app_id">593019278027247</string>
+    <string name="fb_login_protocol_scheme">fb593019278027247</string>
+
+    <!--google-->
+    <string name="google_web_app_id">AIzaSyBy9Q1JMfH5JOM8FLFBVi80GVtq0UpLvbQ</string>
+    <string name="server_client_id">909438657033-bfdljbnidtm2qbe74jdbtbrbk112h825.apps.googleusercontent.com</string>
+    <string name="google_signIn_get_sessionToken_url">https://parseapi.back4app.com/functions/getSessionToken</string>
+    <string name="username_blank_error">Username cannot be blank</string>
+    <string name="no_rooms_found_text">No rooms listed, please add a room</string>
+
+    <string-array name="num_bedrooms_filter_selection_array">
+        <item>1 bedroom</item>
+        <item>2 bedrooms</item>
+        <item>3 bedrooms</item>
+        <item>4+ bedrooms</item>
+    </string-array>
+
+    <string name="sort_rooms_ascending">ascending</string>
+    <string name="sort_rooms_descending">descending</string>
+    <string name="address">Address</string>
+    <string name="apartment">Apartment</string>
+
+
+</resources>

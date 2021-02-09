@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddRoomInfoFragment"
+    android:orientation="vertical"
+    android:background="#f3f3f3"
+    android:nestedScrollingEnabled="false"
+    android:outlineProvider="none"
+    android:scrollIndicators="none"
+    android:touchscreenBlocksFocus="false"
+    android:paddingBottom="20dp"
+    android:id="@+id/scrollview"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:measureWithLargestChild="false"
+        android:hapticFeedbackEnabled="false"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Please Enter Room Info"
+            android:id="@+id/textView7"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/browser_actions_text_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title_num_rooms_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:text="No. Of Bedrooms"
+            android:textColor="@color/browser_actions_text_color"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scrollIndicators="top"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="10dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/num_beds_minus"
+                android:src="@mipmap/ic_minus"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                android:layout_alignTop="@+id/add_room_num_of_rooms_label"
+                android:layout_alignBottom="@+id/add_room_num_of_rooms_label"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:padding="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/add_room_num_of_rooms_label"
+                android:hint="1"
+                android:layout_weight="0.14"
+                android:paddingLeft="100dp"
+                android:paddingTop="@dimen/card_vertical"
+                android:paddingBottom="@dimen/card_vertical"
+                android:paddingRight="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="0" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/num_beds_plus"
+                android:src="@mipmap/ic_plus"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:layout_alignTop="@+id/add_room_num_of_rooms_label"
+                android:layout_alignBottom="@+id/add_room_num_of_rooms_label"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:padding="5dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="No. Of Kitchen"
+            android:id="@+id/textView4"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/browser_actions_text_color"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scrollIndicators="top"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="10dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/minus_num_baths"
+                android:src="@mipmap/ic_minus"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/add_room_num_baths_label"
+                android:layout_alignBottom="@+id/add_room_num_baths_label"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:padding="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/add_room_num_baths_label"
+                android:hint="1"
+                android:layout_weight="0.14"
+                android:paddingLeft="100dp"
+                android:paddingTop="@dimen/card_vertical"
+                android:paddingBottom="@dimen/card_vertical"
+                android:paddingRight="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="0" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plus_num_baths"
+                android:src="@mipmap/ic_plus"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/add_room_num_baths_label"
+                android:layout_alignBottom="@+id/add_room_num_baths_label"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:padding="5dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="No. Of Toilets"
+            android:id="@+id/textView6"
+            android:textColor="@color/browser_actions_text_color"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollIndicators="top"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="10dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/minus_num_toilets"
+                android:src="@mipmap/ic_minus"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/add_room_num_toilets_label"
+                android:layout_alignBottom="@+id/add_room_num_toilets_label"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:padding="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/add_room_num_toilets_label"
+                android:hint="1"
+                android:layout_weight="0.14"
+                android:paddingLeft="100dp"
+                android:paddingTop="@dimen/card_vertical"
+                android:paddingBottom="@dimen/card_vertical"
+                android:paddingRight="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="0" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plus_num_toilets"
+                android:src="@mipmap/ic_plus"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/add_room_num_toilets_label"
+                android:layout_alignBottom="@+id/add_room_num_toilets_label"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:padding="5dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Property Type"
+            android:id="@+id/textView9"
+            android:textColor="@color/browser_actions_text_color"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal" />
+
+        <include layout="@layout/property_type_selection_layout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sharing?"
+            android:id="@+id/textView18"
+            android:textColor="@color/browser_actions_text_color"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollIndicators="top"
+            android:background="@drawable/edittext_background"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:weightSum="1"
+
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="10dp">
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|clip_horizontal|clip_vertical">
+
+                <RadioButton android:id="@+id/radio_sharing_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="#666666"
+                    android:gravity="center"
+                    android:layout_marginRight="50dp" />
+
+                <RadioButton android:id="@+id/radio_sharing_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#666666"
+                    android:layout_marginLeft="50dp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_room_step1_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@mipmap/ic_done_white_48dp"
+            android:layout_marginBottom="@dimen/fab_margin"/>
+
+    </LinearLayout>
+
+</ScrollView>
